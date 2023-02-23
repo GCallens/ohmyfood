@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* ---
+----
+-----
+HEADER
+ ---
+ ----
+ -----*/
+
+header {
+    min-height: 63px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo__ohmyfood {
+    display: flex;
+    justify-content: center;
+}
+
+#logo__ohmyfood--image {
+    width: 162px;
+    margin-top: 17.45px;
+}
+
+/* ---
+----
+-----
+LOCALISATION
+ ---
+ ----
+ -----*/
+
+.localisation {
+    background-color: #EAEAEA;
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 25%;
+    top: 79px;
+    bottom: 18px;
+}
+
+.localisation--ParisBelleville {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---
+----
+-----
+EXPLORE RESTAURANT
+ ---
+ ----
+ -----*/
+
+.explore__restaurant {
+    min-height: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore__restaurant--reservez {
+    display: flex;
+    justify-content: center;
+}
