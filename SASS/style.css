@@ -21,8 +21,8 @@ HEADER
  -----*/
 
 header {
-    min-height: 63px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .header {
@@ -32,7 +32,8 @@ header {
 
 #logo__header {
     width: 162px;
-    margin-top: 17.45px;
+    padding-top: 17.45px;
+    padding-bottom: 17.45px;
 }
 
 /* ---
@@ -44,21 +45,12 @@ LOCALISATION
  -----*/
 
 .localisation {
-    background-color: #EAEAEA;
-}
-
-.fa-location-dot {
-    position: absolute;
-    left: 25%;
-    top: 79px;
-    bottom: 18px;
-}
-
-.localisation--ParisBelleville {
-    min-height: 50px;
+    padding: 15.5px 0 15.5px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #EAEAEA;
 }
 
 /* ---
