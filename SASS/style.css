@@ -25,12 +25,12 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.logo__ohmyfood {
+.header {
     display: flex;
     justify-content: center;
 }
 
-#logo__ohmyfood--image {
+#logo__header {
     width: 162px;
     margin-top: 17.45px;
 }
@@ -74,9 +74,13 @@ EXPLORE RESTAURANT
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .explore__restaurant--reservez {
-    display: flex;
-    justify-content: center;
+
+}
+
+.explore__restaurant--decouvrez {
+
 }
