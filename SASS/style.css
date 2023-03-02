@@ -3,7 +3,7 @@
 ...
 ....
 .....
-PAGE ACCUEIL
+PAGE - ACCUEIL
 .
 ..
 ...
@@ -73,8 +73,7 @@ header {
 
 #logo__header {
     width: 162px;
-    padding-top: 17.45px;
-    padding-bottom: 17.45px;
+    padding: 17.45px 0 17.45px 0;
 }
 
 /* ---
@@ -264,6 +263,24 @@ RESTAURANTS
     right: 7%;
 }
 
+.coeur--accueil:hover {
+    color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    transition: 200ms;
+}
+
+.coeur--plein--couleur {
+    color: transparent;
+    background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.coeur--plein--couleur:hover {
+    opacity: 100;
+    transition: 200ms;
+}
+
 /* ---
 ----
 -----
@@ -314,7 +331,7 @@ footer {
 ...
 ....
 .....
-PAGE - LA PALETTE DU GOÛT
+PAGE - MENU
 .
 ..
 ...
@@ -367,6 +384,30 @@ PAGE - LA PALETTE DU GOÛT
     right: 41px;
     top: 35px;
 }
+
+.coeur--page--menu:hover {
+    color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    transition: 200ms;
+}
+
+.coeur--page--menu--plein--couleur {
+    color: transparent;
+    background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.coeur--page--menu--plein--couleur:hover {
+    opacity: 100;
+    transition: 200ms;
+}
+
+
+
+
+
+
 
 .menu__choix {
     font-weight: 300;
@@ -430,4 +471,85 @@ PAGE - LA PALETTE DU GOÛT
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
     border-radius: 25px;
+}
+
+
+/*.
+..
+...
+....
+.....
+DESKTOP
+.
+..
+...
+....
+.....*/
+
+@media screen and (min-width: 997px) {
+
+    /* HEADER */
+
+    #logo__header {
+        width: 200px;
+        padding: 23px 0 23px 0;
+    }
+
+    /* FONCTIONNEMENT */
+
+    .fonctionnement {
+        padding: 4% 11% 5% 11%;
+    }
+
+    ol {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        margin-bottom: 0;
+        padding: 19px 4% 19px 4%;
+        position: relative;
+    }
+
+    .fonctionnement--chiffre {
+        left: -10px;
+    }
+
+    .fonctionnement--icone {
+        padding-right: 9px;
+    }
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 0;
+        height: 114px;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+    }
+
+    .footer--titre {
+        margin-bottom: 0;
+        position: absolute;
+        right: 7%;
+        bottom: 38%;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
