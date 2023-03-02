@@ -125,13 +125,24 @@ button {
     padding: 13px 18.75px 13px 18.75px;
     border: none;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
 }
 
 button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    transform: scale(1.05);
+}
+
+button:active {
+    color: #9356DC;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
 }
 
 /* ---
@@ -348,6 +359,16 @@ PAGE - MENU
     top: 38%;
 }
 
+.fleche__retour:hover {
+    background: #FFFFFF;
+    padding: 8px;
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
 .photo--menu {
     width: 100%;
 }
@@ -464,6 +485,13 @@ PAGE - MENU
 .btn--commander:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+
+.btn--commander:active {
+    color: #9356DC;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
 
