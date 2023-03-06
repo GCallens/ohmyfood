@@ -136,6 +136,7 @@ button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
     transform: scale(1.05);
+    transition-duration: 500ms;
 }
 
 button:active {
@@ -336,6 +337,13 @@ footer {
     width: 12px;
 }
 
+.footer--categorie {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /*.
 ..
@@ -355,18 +363,19 @@ PAGE - MENU
 
 .fleche__retour {
     position: absolute;
-    left: 10%;
-    top: 38%;
+    left: 20px;
+    top: 25px;
 }
 
 .fleche__retour:hover {
     background: #FFFFFF;
     padding: 8px;
     position: absolute;
-    left: 7%;
-    top: 25%;
+    left: 12px;
+    top: 17px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    transition-duration: 500ms;
 }
 
 .photo--menu {
@@ -517,6 +526,16 @@ DESKTOP
         padding: 23px 0 23px 0;
     }
 
+    .fleche__retour {
+        left: 30px;
+        top: 35px;
+    }
+
+    .fleche__retour:hover {
+        left: 22px;
+        top: 27px;
+    }
+
     /* FONCTIONNEMENT */
 
     .fonctionnement {
@@ -542,7 +561,21 @@ DESKTOP
         padding-right: 9px;
     }
 
+    /* RESTAURANTS */
 
+    .restaurants {
+        padding: 47px 0px 82px 11%;
+    }
+
+    .restaurants--carte {
+        min-width: 35%;
+        margin-right: 20px;
+    }
+
+    .restaurants--scroll__horizontal {
+        display: flex;
+        overflow-x: auto;
+    }
 
 
 
@@ -564,11 +597,26 @@ DESKTOP
         bottom: 38%;
     }
 
+    .footer--categorie {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 25%;
+        width: 57%;
+    }
 
 
 
+    /*
+    ---
+    MENU
+     ---
+     */
 
-
+    .menu__entree__plat__dessert {
+        width: 80%;
+        left: 9%;
+    }
 
 
 
