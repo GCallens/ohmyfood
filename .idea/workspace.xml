@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56de0c2e-6458-4b8e-ba36-59527327df84" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SASS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SASS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SASS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurants/a__la__francaise.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/a__la__francaise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurants/la__note__enchantee.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/la__note__enchantee.html" afterDir="false" />
@@ -64,6 +64,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,7 +90,11 @@
       <workItem from="1677794007658" duration="2388000" />
       <workItem from="1678099235311" duration="9420000" />
       <workItem from="1678131796502" duration="2225000" />
-      <workItem from="1678193899670" duration="4513000" />
+      <workItem from="1678193899670" duration="4801000" />
+      <workItem from="1678449701492" duration="3733000" />
+      <workItem from="1678489036858" duration="9000" />
+      <workItem from="1678491691899" duration="3830000" />
+      <workItem from="1678525880083" duration="5362000" />
     </task>
     <servers />
   </component>
