@@ -70,7 +70,7 @@ LOADER
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.8;
+    opacity: 1;
     animation: anim--fond 3s;
     animation-fill-mode: forwards;
 }
@@ -84,7 +84,7 @@ LOADER
     }
 }
 
-.carre--un {
+.rond--un {
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     border-radius: 50%;
     padding: 100px;
@@ -92,22 +92,24 @@ LOADER
     transform: scale(1) rotate(-360deg);
     transition: transform 4000ms ease-in-out;
     z-index: 2;
-    animation: anim--carre--un 3s;
+    animation: anim--rond--un 3s;
     animation-fill-mode: forwards;
-    top: 35%;
-    left: 40%;
 }
 
-@keyframes anim--carre--un {
+@keyframes anim--rond--un {
     0% {
+        transform: scale(1) rotate(-360deg);
+    }
+    90% {
         transform: scale(1);
     }
     100% {
         visibility: hidden;
+        transform: scale(0);
     }
 }
 
-.carre--deux {
+.rond--deux {
     background: linear-gradient(200.64deg, #FF79DA -5.2%, #9356DC 110.74%);
     border-radius: 50%;
     padding: 70px;
@@ -115,18 +117,20 @@ LOADER
     transform: scale(1) rotate(-360deg);
     transition: transform 4000ms ease-in-out;
     z-index: 3;
-    animation: anim--carre--deux 3s;
+    animation: anim--rond--deux 3s;
     animation-fill-mode: forwards;
-    top: 39.5%;
-    left: 43%;
 }
 
-@keyframes anim--carre--deux {
+@keyframes anim--rond--deux {
     0% {
+        transform: scale(1) rotate(-360deg);
+    }
+    90% {
         transform: scale(1);
     }
     100% {
         visibility: hidden;
+        transform: scale(0);
     }
 }
 
@@ -140,16 +144,24 @@ LOADER
     z-index: 4;
     animation: anim--text--ohmyfood 3s;
     animation-fill-mode: forwards;
-    top: 47%;
-    left: 44.5%;
 }
 
 @keyframes anim--text--ohmyfood {
     0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    90% {
         transform: scale(1);
     }
     100% {
         visibility: hidden;
+        transform: scale(0);
     }
 }
 
@@ -229,14 +241,16 @@ button {
     border-radius: 25px;
     transform: scale(1);
     transition-property: transform;
-    transition-duration: 200ms;
+    transition: all 500ms;
 }
 
 button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
     transform: scale(1.05);
-    transition-duration: 500ms;
+    transition: all 500ms;
+    animation-fill-mode: forwards;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    opacity: 0.8;
 }
 
 button:active {
@@ -291,7 +305,7 @@ ol {
     font-size: 15px;
     font-weight: 500;
     background: #F7F7F7;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 }
 
@@ -373,11 +387,7 @@ RESTAURANTS
     position: absolute;
     top: 80%;
     right: 7%;
-}
-
-.coeur--accueil:hover {
-    color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    transition: 200ms;
+    transition: all 600ms;
 }
 
 .coeur--plein--couleur {
@@ -513,11 +523,7 @@ PAGE - MENU
     font-size: 22px;
     right: 41px;
     top: 35px;
-}
-
-.coeur--page--menu:hover {
-    color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    transition: 200ms;
+    transition: all 600ms;
 }
 
 .coeur--page--menu--plein--couleur {
@@ -539,6 +545,217 @@ PAGE - MENU
     line-height: 19px;
     position: relative;
     padding-bottom: 25px;
+}
+
+/* ANIMATION ENTREE */
+
+.entree__anim {
+    animation: entree__anim 2s;
+}
+
+@keyframes entree__anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__une {
+    animation: assiette__une__anim 2s;
+}
+
+@keyframes assiette__une__anim {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__deux {
+    animation: assiette__deux__anim 2s;
+}
+
+@keyframes assiette__deux__anim {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__trois {
+    animation: assiette__trois__anim 2s;
+}
+
+@keyframes assiette__trois__anim {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__quatre {
+    animation: assiette__quatre__anim 2s;
+}
+
+@keyframes assiette__quatre__anim {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ANIMATION PLAT */
+
+.plat__anim {
+    animation: plat__anim 2s;
+}
+
+@keyframes plat__anim {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__cinq {
+    animation: assiette--cinq--anim 2s;
+}
+
+@keyframes assiette--cinq--anim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__six {
+    animation: assiette--six--anim 2s;
+}
+
+@keyframes assiette--six--anim {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__sept {
+    animation: assiette--sept--anim 2s;
+}
+
+@keyframes assiette--sept--anim {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ANIMATION DESSERT */
+
+.dessert__anim {
+    animation: dessert--anim 2s;
+}
+
+@keyframes dessert--anim {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__huit {
+    animation: assiette--huit--anim 2s;
+}
+
+@keyframes assiette--huit--anim {
+    0% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__neuf {
+    animation: assiette--neuf--anim 2s;
+}
+
+@keyframes assiette--neuf--anim {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.assiette__dix {
+    animation: assiette--dix--anim 2s;
+}
+
+@keyframes assiette--dix--anim {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .menu__choix:after {
@@ -600,7 +817,7 @@ PAGE - MENU
 
 .btn--commander {
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     padding: 15px 40px 15px 40px;
 }
@@ -678,7 +895,7 @@ DESKTOP
     /* RESTAURANTS */
 
     .restaurants {
-        padding: 47px 0px 82px 11%;
+        padding: 47px 0 82px 11%;
     }
 
     .restaurants--carte {
