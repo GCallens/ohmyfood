@@ -758,6 +758,22 @@ PAGE - MENU
     }
 }
 
+.assiette--fond {
+    animation: assiette--fond--anim 2s;
+}
+
+@keyframes assiette--fond--anim {
+    0% {
+        visibility: hidden;
+    }
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 .menu__choix:after {
     content: "";
     height: 3px;
@@ -775,14 +791,36 @@ PAGE - MENU
     border-radius: 15px;
     padding: 12px 11px 12px 11px;
     margin-bottom: 12px;
+    z-index: 1;
 }
 
-.menu__choix__assiette:hover {
-
+.menu__position__validation {
+    position: relative;
 }
 
-.menu__choix__assiette--validation {
+.menu__position__validation:hover .menu__choix__assiette {
+    margin-right: 20%;
+    border-radius: 15px 0 0 15px;
+    transition: all 700ms;
+}
+
+.icone__validation {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.menu__choix__assiette__validation {
+    position: absolute;
     display: flex;
+    justify-content: right;
+    width: -moz-available;
+    background: #99E2D0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 25px 7% 24.5px 11px;
+    margin-bottom: 12px;
+    top: 0;
+    z-index: 0;
 }
 
 .menu__choix__assiette__nom {
