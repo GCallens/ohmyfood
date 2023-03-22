@@ -317,7 +317,7 @@ ol {
     padding-right: 20px;
 }
 
-.fonctionnement--icone:hover {
+li:hover .fonctionnement--icone {
     color: #9356DC;
 }
 

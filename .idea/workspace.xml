@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56de0c2e-6458-4b8e-ba36-59527327df84" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ohmyfood.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/CSS/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants/a__la__francaise.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/a__la__francaise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants/la__note__enchantee.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/la__note__enchantee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants/la__palette__du__gout.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/la__palette__du__gout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurants/le__delice__des__sens.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/le__delice__des__sens.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gaetan.callens/Documents/COURSOPENCLASS/PROJET4/projet4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gaetan.callens/Documents/COURSOPENCLASS/PROJET4/Callens_Gaetan_4_ohmyfood_16:02:2023&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -100,7 +99,10 @@
       <workItem from="1679047372187" duration="5207000" />
       <workItem from="1679054703155" duration="461000" />
       <workItem from="1679059679583" duration="7483000" />
-      <workItem from="1679182739702" duration="1178000" />
+      <workItem from="1679182739702" duration="1758000" />
+      <workItem from="1679184619794" duration="119000" />
+      <workItem from="1679184775211" duration="466000" />
+      <workItem from="1679490056140" duration="386000" />
     </task>
     <servers />
   </component>
