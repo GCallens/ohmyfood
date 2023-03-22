@@ -550,7 +550,7 @@ PAGE - MENU
 /* ANIMATION ENTREE */
 
 .entree__anim {
-    animation: entree__anim 2s;
+    animation: entree__anim 1s;
 }
 
 @keyframes entree__anim {
@@ -562,11 +562,11 @@ PAGE - MENU
     }
 }
 
-.assiette__une {
-    animation: assiette__une__anim 2s;
+.assiette__entree {
+    animation: assiette__entree__anim 1s;
 }
 
-@keyframes assiette__une__anim {
+@keyframes assiette__entree__anim {
     0% {
         opacity: 0;
     }
@@ -578,47 +578,15 @@ PAGE - MENU
     }
 }
 
-.assiette__deux {
-    animation: assiette__deux__anim 2s;
+.assiette--entree--fond {
+    animation: assiette--entree--anim--fond 2s;
 }
 
-@keyframes assiette__deux__anim {
+@keyframes assiette--entree--anim--fond {
     0% {
         opacity: 0;
     }
-    15% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.assiette__trois {
-    animation: assiette__trois__anim 2s;
-}
-
-@keyframes assiette__trois__anim {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.assiette__quatre {
-    animation: assiette__quatre__anim 2s;
-}
-
-@keyframes assiette__quatre__anim {
-    0% {
-        opacity: 0;
-    }
-    35% {
+    5% {
         opacity: 0;
     }
     100% {
@@ -629,7 +597,7 @@ PAGE - MENU
 /* ANIMATION PLAT */
 
 .plat__anim {
-    animation: plat__anim 2s;
+    animation: plat__anim 1s;
 }
 
 @keyframes plat__anim {
@@ -644,11 +612,11 @@ PAGE - MENU
     }
 }
 
-.assiette__cinq {
-    animation: assiette--cinq--anim 2s;
+.assiette__plat {
+    animation: assiette--plat--anim 800ms;
 }
 
-@keyframes assiette--cinq--anim {
+@keyframes assiette--plat--anim {
     0% {
         opacity: 0;
     }
@@ -660,31 +628,15 @@ PAGE - MENU
     }
 }
 
-.assiette__six {
-    animation: assiette--six--anim 2s;
+.assiette--plat--fond {
+    animation: assiette--plat--fond--anim 1s;
 }
 
-@keyframes assiette--six--anim {
+@keyframes assiette--plat--fond--anim {
     0% {
         opacity: 0;
     }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.assiette__sept {
-    animation: assiette--sept--anim 2s;
-}
-
-@keyframes assiette--sept--anim {
-    0% {
-        opacity: 0;
-    }
-    70% {
+    50% {
         opacity: 0;
     }
     100% {
@@ -695,7 +647,7 @@ PAGE - MENU
 /* ANIMATION DESSERT */
 
 .dessert__anim {
-    animation: dessert--anim 2s;
+    animation: dessert--anim 1s;
 }
 
 @keyframes dessert--anim {
@@ -710,11 +662,11 @@ PAGE - MENU
     }
 }
 
-.assiette__huit {
-    animation: assiette--huit--anim 2s;
+.assiette__dessert {
+    animation: assiette--dessert--anim 1s;
 }
 
-@keyframes assiette--huit--anim {
+@keyframes assiette--dessert--anim {
     0% {
         opacity: 0;
     }
@@ -726,51 +678,19 @@ PAGE - MENU
     }
 }
 
-.assiette__neuf {
-    animation: assiette--neuf--anim 2s;
+.assiette--dessert--fond {
+    animation: assiette--dessert--fond--anim 1s;
 }
 
-@keyframes assiette--neuf--anim {
+@keyframes assiette--dessert--fond--anim {
     0% {
         opacity: 0;
     }
-    95% {
+    90% {
         opacity: 0;
     }
     100% {
         opacity: 1;
-    }
-}
-
-.assiette__dix {
-    animation: assiette--dix--anim 2s;
-}
-
-@keyframes assiette--dix--anim {
-    0% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.assiette--fond {
-    animation: assiette--fond--anim 2s;
-}
-
-@keyframes assiette--fond--anim {
-    0% {
-        visibility: hidden;
-    }
-    99% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
     }
 }
 
