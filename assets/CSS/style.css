@@ -554,20 +554,20 @@ PAGE - MENU
 /* ANIMATION ENTREE */
 
 .entree__anim {
-    animation: entree__anim 1s;
+    -webkit-animation: entree__anim 1s;
 }
 
-@keyframes entree__anim {
-    0% {
+@-webkit-keyframes entree__anim {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }
 
 .assiette__entree {
-    animation: assiette__entree__anim 1s;
+    -webkit-animation: assiette__entree__anim 1s;
 }
 
 @keyframes assiette__entree__anim {
@@ -583,7 +583,7 @@ PAGE - MENU
 }
 
 .assiette--entree--fond {
-    animation: assiette--entree--anim--fond 2s;
+    -webkit-animation: assiette--entree--anim--fond 2s;
 }
 
 @keyframes assiette--entree--anim--fond {
@@ -601,7 +601,7 @@ PAGE - MENU
 /* ANIMATION PLAT */
 
 .plat__anim {
-    animation: plat__anim 1s;
+    -webkit-animation: plat__anim 1s;
 }
 
 @keyframes plat__anim {
@@ -617,7 +617,7 @@ PAGE - MENU
 }
 
 .assiette__plat {
-    animation: assiette--plat--anim 800ms;
+    -webkit-animation: assiette--plat--anim 800ms;
 }
 
 @keyframes assiette--plat--anim {
@@ -633,7 +633,7 @@ PAGE - MENU
 }
 
 .assiette--plat--fond {
-    animation: assiette--plat--fond--anim 1s;
+    -webkit-animation: assiette--plat--fond--anim 1s;
 }
 
 @keyframes assiette--plat--fond--anim {
@@ -651,7 +651,7 @@ PAGE - MENU
 /* ANIMATION DESSERT */
 
 .dessert__anim {
-    animation: dessert--anim 1s;
+    -webkit-animation: dessert--anim 1s;
 }
 
 @keyframes dessert--anim {
@@ -667,7 +667,7 @@ PAGE - MENU
 }
 
 .assiette__dessert {
-    animation: assiette--dessert--anim 1s;
+    -webkit-animation: assiette--dessert--anim 1s;
 }
 
 @keyframes assiette--dessert--anim {
@@ -683,7 +683,7 @@ PAGE - MENU
 }
 
 .assiette--dessert--fond {
-    animation: assiette--dessert--fond--anim 1s;
+    -webkit-animation: assiette--dessert--fond--anim 1s;
 }
 
 @keyframes assiette--dessert--fond--anim {
@@ -731,17 +731,20 @@ PAGE - MENU
 .icone__validation {
     color: #FFFFFF;
     font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
 
 .menu__choix__assiette__validation {
     position: absolute;
     display: flex;
     justify-content: right;
-    width: -moz-available;
+    width: 100%;
+    height: 100%;
     background: #99E2D0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    padding: 25px 7% 24.5px 11px;
     margin-bottom: 12px;
     top: 0;
     z-index: 0;
